@@ -1,0 +1,54 @@
+<%- include("../partials/header.ejs") %>
+
+<main role="main" class="inner cover">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="lead">
+        <h1 class="text-center">Order Details</h1>
+        <h6 class="text-center border-bottom">
+          Order ID:
+          <p class="text-white"><%= order._id %></p>
+        </h6>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Pizza Size</h6>
+              <p class="font-weight-bolder text-white"><%= order.size %></p>
+            </div>
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Crust</h6>
+              <p class="font-weight-bolder text-white"><%= order.crust %></p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Sauce</h6>
+              <p class="font-weight-bolder text-white"><%= order.sauce %></p>
+            </div>
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Cheese</h6>
+              <p class="font-weight-bolder text-white"><%= order.cheese %></p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Meat Toppings</h6>
+              <p class="font-weight-bolder text-white">
+                <%= order.toppingsMeat %>
+              </p>
+            </div>
+            <div class="col">
+              <h6 class="text-left mb-0 mt-2">Veggie Toppings</h6>
+              <p class="font-weight-bolder text-white">
+                <%= order.toppingsVeggie %>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h6 class="border-bottom text-white">Total</h6>
+        <h3 class="mt-3 mb-5">$<%= order.price %>.00</h3>
+        <a class="btn btn-danger" href="/orders"
+          ><i class="fas fa-angle-left mr-2"></i> Back to Orders</a
+        >
+      </div>
+    </div>
+  </div>
+</main>

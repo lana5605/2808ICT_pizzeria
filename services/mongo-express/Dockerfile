@@ -1,0 +1,5 @@
+FROM mongo-express
+
+ENV ME_CONFIG_MONGODB_SERVER mongodb
+
+EXPOSE 8081

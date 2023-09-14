@@ -1,0 +1,21 @@
+<%- include("../partials/header.ejs") %>
+
+<!-- Main -->
+<div class="main">
+  <div class="container mt-5">
+    <div class="row">
+      <h1>Orders</h1>
+      <ul>
+        <% orders.forEach(order => { %>
+        <li>
+          <a href="/order/<%= order._id %>"><%= order.name %></a>
+          <span> Created at: <%= order.createdAt %> </span>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END Main -->
+
+<%- include("../partials/footer.ejs") %>

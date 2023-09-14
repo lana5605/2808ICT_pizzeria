@@ -1,0 +1,47 @@
+{
+  "name": "pizzeria-project",
+  "version": "1.0.0",
+  "description": "pizzeria, node, mongoose, mongo, express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "mongo",
+    "express"
+  ],
+  "author": "Crystal McNeil: crystal.mcneil@creativarian.com and Dylan W",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.0.0-alpha1",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-rate-limit": "^5.1.3",
+    "express-session": "^1.17.1",
+    "font-awesome": "^4.7.0",
+    "helmet": "^4.1.1",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.5.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.7",
+    "mongoose-data-seed": "^2.1.6",
+    "mongoose-morgan": "^1.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utsukushiihime/pizzeria-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utsukushiihime/pizzeria-project/issues"
+  },
+  "homepage": "https://github.com/utsukushiihime/pizzeria-project#readme"
+}

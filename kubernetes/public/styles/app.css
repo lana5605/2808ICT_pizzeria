@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+body {
+  background-image: url("/images/stars-bg.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75em;
+  color: rgba(238, 236, 236, 0.714);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eeb51c !important;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+select {
+  width: 100%;
+  height: 50px;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #c0392b;
+  border: none;
+  border-bottom: 2px solid #962d22;
+  color: white;
+  appearance: none;
+  padding: 10px;
+  padding-right: 38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-bottom-color 0.3s ease;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a,
+label {
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+}
+
+a:hover,
+.text-danger {
+  color: #bb3628 !important;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+nav a:hover {
+  color: #eeb51c !important;
+}
+
+.dropdown-menu {
+  background: rgba(34, 34, 34, 0.85);
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #bb3628 !important;
+}
+
+.bg-dark {
+  background-color: #2222229f !important;
+  border: transparent;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.btn-danger,
+.btn-outline-danger:hover {
+  color: #fff !important;
+  background: #bb3628;
+}
+
+.btn {
+  padding: 0.5rem 1.75rem !important;
+  border-radius: 1em;
+  line-height: 1.5rem;
+}
+
+.btn a:hover {
+  color: #eeb51c !important;
+}
+
+.btn-danger:hover {
+  color: #fff !important;
+  background-color: #8e2117 !important;
+  border-color: #8e2117 !important;
+}
+
+.btn-outline-danger {
+  color: #bb3628;
+  border: #bb3628 solid 1px;
+}
+
+.btn-group-sm > .btn,
+.btn-sm {
+  padding: 0.35rem 0.5rem;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+  top: 0.1rem;
+  padding: 3px 5px;
+  position: relative;
+}
+
+.form-control {
+  padding: 0.375rem 0.75rem;
+}
+
+.badge {
+  color: #eeb51c !important;
+  font-size: 1rem;
+}
+
+select#toppingsMeat,
+select#toppingsVeggie {
+  font-size: 1.25rem;
+  height: 300px;
+  background: rgba(46, 46, 46, 0.65);
+  color: rgb(228, 228, 220);
+  border-color: transparent;
+}
+select:-internal-list-box:enabled option:checked:enabled:hover {
+  background-color: red !important;
+  color: rgb(16, 16, 16) !important;
+}
+
+select#size,
+select#crust,
+select#sauce,
+select#cheese {
+  font-size: 1.25rem;
+  color: rgb(228, 228, 220);
+  background: rgba(46, 46, 46, 0.65);
+  border-color: transparent;
+}
+
+select:-internal-list-box:enabled option:checked:enabled:selected {
+  background: #bb3628;
+  color: rgb(16, 16, 16) !important;
+}
+
+option {
+  padding: 4px 0;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #181d20;
+  border: 3px solid #e8b023;
+  border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.table-dark {
+  --bs-table-bg: #343a40;
+  --bs-table-striped-bg: #6c757d57;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #010506;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #43494e;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+  border-color: #484e53;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.75rem;
+  background-color: #343a405e;
+  background-image: linear-gradient(
+    var(--bs-table-accent-bg),
+    var(--bs-table-accent-bg)
+  );
+  border-bottom-width: 1px;
+}
+
+td {
+  font-size: 1rem;
+}
+
+/* Navigation */
+
+img.img-fluid.logo {
+  margin: 10px 30px;
+}
+
+a.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #ffffff;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  width: 130px;
+  z-index: 12;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+  right: 20em;
+}
+
+nav {
+  background: #030b0ff7;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 2000;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+
+.btn-clear {
+  color: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent;
+}
+
+.btn-clear:hover {
+  color: #eeb51c !important;
+}
+
+.nav-expanded nav {
+  right: 0;
+}
+
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 12px;
+}
+
+.main-menu li {
+  border-bottom: 1px solid #222;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.main-menu li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.icon:before {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}

@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+    - port: 80
+      protocol: TCP
+      name: http
+    - port: 443
+      protocol: TCP
+      name: https
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nginx-proxy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      volumes:
+      - name: configmap-volume
+        configMap:
+          name: nginxconfigmap
+      - name: secret-volume
+        secret:
+          secretName: nginx-certs-keys
+      containers:
+        - name: nginx-proxy
+          image: nginx
+          ports:
+            - containerPort: 443
+            - containerPort: 80
+          volumeMounts:
+          - mountPath: /etc/nginx
+            name: configmap-volume
+          - mountPath: /etc/nginx/ssl
+            name: secret-volume
